@@ -26,7 +26,7 @@ class QuickActions extends StatelessWidget {
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min, // Allows container to shrink if needed
+          mainAxisSize: MainAxisSize.min, 
           children: [
             Text(
               "Quick Actions",
@@ -37,17 +37,16 @@ class QuickActions extends StatelessWidget {
             ),
             SizedBox(height: screenHeight * 0.015),
 
-            /// FIX: Used `ConstrainedBox` to prevent overflow
             ConstrainedBox(
               constraints: BoxConstraints(
-                maxHeight: screenHeight * 0.25, // Adjusted height
+                maxHeight: screenHeight * 0.25, 
               ),
               child: GridView.count(
                 shrinkWrap: true,
                 physics: NeverScrollableScrollPhysics(),
                 crossAxisCount: 4,
-                childAspectRatio: 0.85, // FIX: Adjusted for better fitting
-                mainAxisSpacing: screenHeight * 0.01, // FIX: Proper spacing
+                childAspectRatio: 0.85, 
+                mainAxisSpacing: screenHeight * 0.01, 
                 crossAxisSpacing: screenWidth * 0.02,
                 children: [
                   Item(Icons.install_mobile, "Recharge"),
@@ -72,7 +71,7 @@ class QuickActions extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          height: screenWidth * 0.13, // FIX: Slightly smaller
+          height: screenWidth * 0.13, 
           width: screenWidth * 0.13,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
@@ -80,7 +79,7 @@ class QuickActions extends StatelessWidget {
           ),
           child: Icon(icon, size: screenWidth * 0.06, color: Colors.black),
         ),
-        SizedBox(height: 3), // Reduced space
+        SizedBox(height: 3), 
         Text(
           label,
           textAlign: TextAlign.center,
