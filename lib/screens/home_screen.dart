@@ -71,15 +71,15 @@ class RechargeScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                // Recharge Card
+                
                 Stack(
                   alignment: Alignment.topCenter,
                   children: [
                     Container(height: 200,width: screenWidth,decoration: BoxDecoration(color: Colors.transparent),),
                     Positioned(
                       bottom: 25,
-                        child: Warning(screenWidth: screenWidth, screenHeight: screenHeight)), // Warning widget at the bottom
-                    RechargeCard(screenWidth: screenWidth, screenHeight: screenHeight),  // Recharge card on top
+                        child: Warning(screenWidth: screenWidth, screenHeight: screenHeight)), 
+                    RechargeCard(screenWidth: screenWidth, screenHeight: screenHeight),  
                   ],
                 ),
 
